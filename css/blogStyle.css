@@ -1,0 +1,568 @@
+/* -------------------------- FONTS ------------------------------ */
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url('../fonts/poppins/Poppins-Light.ttf'); 
+}
+    
+@font-face {
+    font-family: montserrat-Regular;
+    src: url(../fonts/montserrat/Montserrat-Regular.ttf);
+}
+
+:root {
+    --title-color : #222;
+    --site-red-color : #d61c22;
+}
+
+/* -------------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+/* ------------- general formats -------------- */
+
+h1 {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: poppins;
+    letter-spacing: 10px;
+}
+
+h2 {
+    color: var(--site-red-color);
+    font-style: italic;
+    font-size: 30px;
+    font-family: courgette;
+}
+
+h3{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #333333;
+    letter-spacing: 2px;
+}
+
+h4{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666666;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+
+p {
+    color: #666;
+    line-height: 1.7;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: montserrat;
+}
+
+hr{
+    color: #e8e6e6;
+}
+
+
+/* --------------- Main Menu ----------------- */
+#main-menu {
+    /* border: 1px red solid; */
+    background: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0));
+    color: white;
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 33px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu-items {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
+#menu-social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+
+body {
+    border-top: solid 5px var(--site-red-color);
+}
+
+
+/* -------- Blog banner ------------ */
+#blog-banner {
+    width: 100%;
+    height: 545px;
+    background-image: url(../img/bg-title-page-03.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+#banner-title {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* padding-top: 40px; */
+    transform: translateY(50%);
+}
+
+/* -----------------Home / Blog------------------- */
+#nav1{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 50px;
+    font-family: montserrat;
+    font-weight: bolder;
+    color: #0c0c0c;
+    letter-spacing: 1px;
+    padding-left: 50px;
+    padding-right: 15px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* --------------Main Content / Sidebar------------------ */
+#mainContent{
+    display: flex;
+    width: 100%;
+}
+/* ----------------Right Content----------------- */
+#rightContent{
+    border-right: 1px solid #e6e6e6;
+    width: 70%;
+    padding-top: 70px;
+
+}
+
+/* -----------mainImage----------- */
+
+.mainImage{
+    position: relative;
+}
+.mainImage img{
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: montserrat;
+    font-weight: 400;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 15px;
+    width: 90px;
+    height: 90px;
+    font-size: 1em;
+    line-height: 1.5;
+    color:white;
+    border-radius: 10px;
+    background-color: #ec1d25;
+}
+/* ----------mainText---------- */
+
+.mainText h4{
+    font-family:poppins-light;
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    color: #212529;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+
+    
+}
+.mainText span{
+    font-family: montserrat-Regular;
+    font-weight: 400;
+    font-size: 12px;
+    color: #808088;
+    line-height: 1.2;
+    padding-left: 50px;
+
+
+}
+.mainText p{
+    max-width: 820px;
+    line-height: 1.2;
+    font-size: 16px;
+    margin: 10px;
+    line-height: 1.2;
+    color: #666666;
+    text-align: left;
+    padding: 10px 0px 20px 40px;
+
+
+}
+.link {
+    padding-left: 50px;
+    padding-bottom: 30px;
+
+}
+
+.link a {
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #222222;
+
+
+}
+.link i{
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+/* ---------------------Side Content----------------------- */
+#leftContent {
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    width: 25%;
+}
+/* -----------------Search------------------- */
+#searchSection{
+    position: relative;
+    border: 2px solid #d9d9d9 ;
+    width: 240px;
+    height: 45px;
+    font-weight: 400;
+    color: #212529;
+    transform: translate();
+}
+/* -------Search Input-------- */
+#searchSection input {
+    width: 195px;
+    height: 100%;
+    font-size: 14px;
+    padding-left: 20px;
+    border: none;
+}
+/* ---------Search Button-------- */
+#searchButton{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    color: white;
+    font-size: large;
+    background-color: #333333;
+    transition: all 0.5s;
+}
+#searchButton:hover{
+    transition: all 0.5s;
+    background-color: var(--site-red-color);
+}
+
+/* ---------------Categories-------------- */
+
+#leftContent h4{
+    font-family: poppins;
+    font-size: 22px;
+    font-weight: 500;
+    color:#222222;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
+#categories li{
+    border-bottom: 1px solid #e6e6e6;
+    font-family:montserrat ;
+    font-weight: 400;
+    font-size: 12px;
+    color: #222222;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    list-style: none;
+}
+
+/* ----------------Most Popular------------------ */
+
+ul li {
+    list-style-type: none;
+}
+.popular {
+
+    display: flex;
+    flex-direction: row; 
+}
+
+.popular div img{
+    width:70px;
+    height: 70px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.popular div a{
+    display: block;
+    font-family: poppins;
+    font-weight: 500;
+    color: #222222;
+    font-size: 12px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.popular div span{
+    font-family: poppins;
+    font-weight: 400;
+    color: #999999;
+    font-size: 12px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+/* ------------------Archive------------------ */
+#archive ul li{
+    list-style-type: none;
+}
+
+#archive li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#archive li a{
+    font-family: poppins;
+    font-weight: 500;
+    color: #222222;
+    font-size: 12px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#archive li span {
+    font-family: poppins;
+    font-weight: 500;
+    color: #222222;
+    font-size: 12px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/* -----------------Footer------------------ */
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 480px;
+    background-color: #212529;
+}
+/* -------------Upper Footer---------------- */
+
+.upper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+}
+/* ----------------footLeft------------------ */
+
+.footLeft{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 15px;
+    padding-top: 30px;
+}
+
+.footLeft h4{
+    color: white;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+.footLeft div span{
+    color: #999999;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+/* --------------footMiddle-------------- */
+.footMiddle{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+}
+.footMiddle  h4{
+    color: white;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.tweet {
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-family: poppins;
+}
+.tweet a{
+    text-decoration: none;
+    color: var(--site-red-color);
+}
+.tweet span {
+    font-size: 12px;
+    color: white;
+}
+.tweet div {
+    font-size: 12px;
+    color: grey;
+    padding-top: 10px;
+}
+
+.tweet p {
+    text-align: left;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+
+}
+/* -------------foot Gallery-------------- */
+.footGallery {
+    width: 33%;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.footGallery h4{
+    color: white;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+    padding-top: 15px;    
+}
+
+.gallery {
+    display: flex;
+    width: auto;
+}
+
+.gallery img{
+    width: 75px;
+    height: 75px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+/* --------------Lower Footer--------------- */
+.lower{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: #222222;
+    font-size: 14px;
+    font-family: poppins;
+    color: white;
+    padding-left: 50px;
+
+}
+
+#footIcons i{
+    padding-right: 15px;
+    
+}
+#footcopy{
+    padding-left: 100px;
+    padding-right: 15px;
+    font-size: 14px;
+    color: #999999;
+}
+
+/* ----------up to page top---------- */
+#upToPageTop {
+    background-color: black;    
+    opacity: 0.5;
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 40px;
+    position: fixed;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+#upToPageTop:hover {
+    background-color: var(--site-red-color);
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+#upToPageTop i {
+    color: white;
+    transform: translateY(12px);
+}
+
+/* -----------------------End-------------------------- */
+
+/* ----------------Responsive Design--------------- */
